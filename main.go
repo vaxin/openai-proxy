@@ -18,7 +18,7 @@ var (
 
 func main() {
 	http.HandleFunc("/", handleRequest)
-	http.ListenAndServe(":9000", nil)
+	http.ListenAndServe(":80", nil)
 }
 
 func handleRequest(w http.ResponseWriter, r *http.Request) {
